@@ -9,11 +9,57 @@
       name="description"
       content="Welcome to Queer Squad: a Chinese-speaking queer community based in Germany"
     />
-    <link
-      rel="shortcut icon"
-      href="assets/logo.png"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav">
+        <button class="nav__menu-button nav__menu-button--open">
+          <span class="sr-only">Open menu</span>
+          <img src="./assets/icons/menu.svg" alt="" />
+        </button>
+        <div class="nav__mobile-nav">
+          <button class="nav__menu-button nav__menu-button--close">
+            <span class="sr-only">Close menu</span>
+            <img src="./assets/icons/close.svg" alt="" />
+          </button>
+          <ul class="nav__link-list">
+            <li class="nav__link">Home</li>
+            <li class="nav__link">About us</li>
+            <li class="nav__link">What's on</li>
+            <li class="nav__link">Past events</li>
+            <li class="nav__link">Join us</li>
+            <li class="nav__link">Contact</li>
+            <li class="nav__link">Blog</li>
+            <li class="nav__link">Legal Notice</li>
+            <li class="nav__link nav__link--donate">Donate</li>
+          </ul>
+        </div>
+        <a href="." class="nav__logo">Queer Squad</a>
+        <ul class="nav__link-list">
+          <li class="nav__link">About us</li>
+          <li class="nav__link">What's on</li>
+          <li class="nav__link">Past events</li>
+          <li class="nav__link">Join us</li>
+          <li class="nav__link">Contact</li>
+          <li class="nav__link">Blog</li>
+          <li class="nav__link">Legal Notice</li>
+          <li class="nav__link nav__link--donate">Donate</li>
+        </ul>
+        <div class="nav__language-switcher">
+          <button class="nav__language-button">English</button>
+          <ul class="nav__language-list">
+            <li class="nav__other-language nav__other-language--roman">
+              Deutsch
+            </li>
+            <li class="nav__other-language nav__other-language--chinese">
+              简体中文
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>

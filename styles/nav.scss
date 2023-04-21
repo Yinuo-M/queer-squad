@@ -1,0 +1,9 @@
+.nav {
+  &__mobile-nav {
+    width: 0;
+
+    &--open {
+      width: auto;
+    }
+  }
+}
