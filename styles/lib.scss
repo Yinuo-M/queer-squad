@@ -1,3 +1,22 @@
+// Breakpoints
+$sm: '360px';
+$md: '744px';
+$lg: '1024px';
+$xl: '1440px';
+
+// Colours
+$black: '#434343';
+$orange: '#FB7922';
+$blue: '#509DD4';
+$white: '#FFFFFF';
+
+// Fonts
+$roman-sans: "'Noto Sans', sans-serif";
+$chinese-sans: "'Noto Sans SC', sans-serif";
+$roman-serif: "'Pacifico', cursive";
+$chinese-serif: "'ZCOOL KuaiLe', sans-serif";
+
+// Utility classes
 .sr-only {
   position: absolute;
   left: -10000px;
