@@ -403,7 +403,7 @@ header {
 @media screen and (min-width: 1024px) {
   .nav__logo {
     margin: 0 auto;
-    transform: translateX(20%);
+    transform: translateX(30%);
   }
 }
 .nav__mobile-nav {
