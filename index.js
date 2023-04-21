@@ -26,6 +26,33 @@ if (mobileMenu && closeMenuBtn) {
     if (e.target === mobileMenu) closeMenu();
   };
   mobileMenu.addEventListener('click', closeMenuOnClickOutside);
+
+  // Trap focus when mobile nav is open
+  const firstFocusableElement = closeMenuBtn;
+  const lastFocusableElement = mobileMenu.querySelector('.nav__link--donate a'); // get last element to be focused inside modal
+
+  mobileMenu.addEventListener('keydown', function (e) {
+    let isTabPressed = e.key === 'Tab';
+
+    if (!isTabPressed) {
+      return;
+    }
+
+    if (e.shiftKey) {
+      // if shift key pressed for shift + tab combination
+      if (document.activeElement === firstFocusableElement) {
+        lastFocusableElement.focus(); // add focus for the last focusable element
+        e.preventDefault();
+      }
+    } else {
+      // if tab key is pressed
+      if (document.activeElement === lastFocusableElement) {
+        // if focused has reached to last focusable element then focus first focusable element after pressing tab
+        firstFocusableElement.focus(); // add focus for the first focusable element
+        e.preventDefault();
+      }
+    }
+  });
 }
 
 // Add event listeners to nav language switcher
