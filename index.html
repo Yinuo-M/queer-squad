@@ -19,53 +19,60 @@
     />
     <script src="index.js" defer></script>
   </head>
-  <body>
+  <body class="body-roman">
     <header>
       <nav class="nav">
         <button class="nav__menu-button nav__menu-button--open">
           <span class="sr-only">Open menu</span>
           <img src="./assets/icons/menu.svg" alt="" />
         </button>
-        <div class="nav__mobile-nav">
-          <button class="nav__menu-button nav__menu-button--close">
-            <span class="sr-only">Close menu</span>
-            <img src="./assets/icons/close.svg" alt="" />
-          </button>
-          <ul class="nav__link-list">
-            <li class="nav__link">Home</li>
-            <li class="nav__link">About us</li>
-            <li class="nav__link">What's on</li>
-            <li class="nav__link">Past events</li>
-            <li class="nav__link">Join us</li>
-            <li class="nav__link">Contact</li>
-            <li class="nav__link">Blog</li>
-            <li class="nav__link">Legal Notice</li>
-            <li class="nav__link nav__link--donate">Donate</li>
-          </ul>
+        <div class="nav__mobile-nav hidden">
+          <div class="nav__mobile-nav-inner">
+            <button class="nav__menu-button nav__menu-button--close">
+              <span class="sr-only">Close menu</span>
+              <img src="./assets/icons/close.svg" alt="" />
+            </button>
+            <ul class="nav__link-list">
+              <li class="nav__link"><a href=".">Home</a></li>
+              <li class="nav__link"><a href=".">About us</a></li>
+              <li class="nav__link"><a href="">What's on</a></li>
+              <li class="nav__link"><a href="">Past events</a></li>
+              <li class="nav__link"><a href="">Join us</a></li>
+              <li class="nav__link"><a href="">Contact</a></li>
+              <li class="nav__link"><a href="">Blog</a></li>
+              <li class="nav__link"><a href="">Legal Notice</a></li>
+              <li class="nav__link nav__link--donate"><a href="">Donate</a></li>
+            </ul>
+          </div>
         </div>
         <a href="." class="nav__logo">Queer Squad</a>
-        <ul class="nav__link-list">
-          <li class="nav__link">About us</li>
-          <li class="nav__link">What's on</li>
-          <li class="nav__link">Past events</li>
-          <li class="nav__link">Join us</li>
-          <li class="nav__link">Contact</li>
-          <li class="nav__link">Blog</li>
-          <li class="nav__link">Legal Notice</li>
-          <li class="nav__link nav__link--donate">Donate</li>
-        </ul>
+        <div class="nav__desktop-nav">
+          <ul class="nav__link-list">
+            <li class="nav__link"><a href="">About us</a></li>
+            <li class="nav__link"><a href="">What's on</a></li>
+            <li class="nav__link"><a href="">Past events</a></li>
+            <li class="nav__link"><a href="">Join us</a></li>
+            <li class="nav__link"><a href="">Contact</a></li>
+            <li class="nav__link"><a href="">Blog</a></li>
+            <li class="nav__link"><a href="">Legal Notice</a></li>
+            <li class="nav__link nav__link--donate"><a href="">Donate</a></li>
+          </ul>
+        </div>
         <div class="nav__language-switcher">
-          <button class="nav__language-button">English</button>
-          <ul class="nav__language-list">
+          <button class="nav__language-button"><span class="sr-only">Change from </span>English<span class="sr-only"> to another language</span></button>
+          <ul class="nav__language-list hidden">
             <li class="nav__other-language nav__other-language--roman">
-              Deutsch
+              <a href=".">Deutsch</a>
             </li>
             <li class="nav__other-language nav__other-language--chinese">
-              简体中文
+              <a href=".">简体中文</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <main>
+      <div style="height: 1000px">Placeholder div</div>
+    </main>
   </body>
 </html>

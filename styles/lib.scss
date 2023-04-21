@@ -1,20 +1,37 @@
 // Breakpoints
-$sm: '360px';
-$md: '744px';
-$lg: '1024px';
-$xl: '1440px';
+$sm: 360px;
+$md: 744px;
+$lg: 1024px;
+$xl: 1440px;
 
 // Colours
-$black: '#434343';
-$orange: '#FB7922';
-$blue: '#509DD4';
-$white: '#FFFFFF';
+$black: #434343;
+$orange: #fb7922;
+$light-orange: #fb7922b0;
+$blue: #509dd4;
+$white: #ffffff;
 
 // Fonts
-$roman-sans: "'Noto Sans', sans-serif";
-$chinese-sans: "'Noto Sans SC', sans-serif";
-$roman-serif: "'Pacifico', cursive";
-$chinese-serif: "'ZCOOL KuaiLe', sans-serif";
+$roman-sans: 'Noto Sans', sans-serif;
+$chinese-sans: 'Noto Sans SC', sans-serif;
+$roman-serif: 'Pacifico', cursive;
+$chinese-serif: 'ZCOOL KuaiLe', sans-serif;
+
+@mixin rainbow-fill {
+  background-image: url('../assets/rainbow.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin header-logo {
+  font-family: $roman-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  @include rainbow-fill;
+}
 
 // Grid
 @mixin container {
@@ -52,5 +69,5 @@ $chinese-serif: "'ZCOOL KuaiLe', sans-serif";
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
