@@ -1,6 +1,10 @@
 .nav {
+  position: relative;
+
   &__mobile-nav {
+    position: absolute;
     width: 0;
+    overflow-x: hidden;
 
     &--open {
       width: auto;

@@ -16,6 +16,31 @@ $chinese-sans: "'Noto Sans SC', sans-serif";
 $roman-serif: "'Pacifico', cursive";
 $chinese-serif: "'ZCOOL KuaiLe', sans-serif";
 
+// Grid
+@mixin container {
+  padding: 0 1rem;
+  max-width: 1440px;
+
+  @media screen and (min-width: $md) {
+    padding: 0 2rem;
+  }
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+
+  @media screen and (min-width: $md) {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  @media screen and (min-width: $lg) {
+    gap: 2rem;
+  }
+}
+
 // Utility classes
 .sr-only {
   position: absolute;

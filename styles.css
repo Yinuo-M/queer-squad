@@ -334,11 +334,26 @@ button {
   display: none;
 }
 
+.nav {
+  position: relative;
+}
 .nav__mobile-nav {
+  position: absolute;
   width: 0;
+  overflow-x: hidden;
 }
 .nav__mobile-nav--open {
   width: auto;
+}
+
+html {
+  font-size: 16px;
+  background-color: "#FFFFFF";
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

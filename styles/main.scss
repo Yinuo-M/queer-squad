@@ -1,3 +1,12 @@
 @use './reset.scss';
 @use './lib.scss';
 @use './nav.scss';
+
+html {
+  font-size: 16px;
+  background-color: lib.$white;
+
+  @media screen and (min-width: lib.$lg) {
+    font-size: 18px;
+  }
+}
