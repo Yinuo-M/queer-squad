@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "sass": "^1.62.0"
+  },
+  "name": "queer-squad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch styles/main.scss:styles.css "
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
