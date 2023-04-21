@@ -37,6 +37,7 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 @mixin container {
   padding: 0 1rem;
   max-width: 1440px;
+  margin: 0 auto;
 
   @media screen and (min-width: $md) {
     padding: 0 2rem;

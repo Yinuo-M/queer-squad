@@ -22,7 +22,7 @@ body {
   &.scroll-freeze {
     overflow: hidden;
 
-    @media screen and (min-width: lib.$xl) {
+    @media screen and (min-width: lib.$lg) {
       overflow: auto;
     }
   }
