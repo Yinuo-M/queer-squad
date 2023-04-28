@@ -35,11 +35,23 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
   @include rainbow-fill;
 }
 
+@mixin h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $orange;
+}
+
+@mixin h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: $black;
+}
+
 @mixin body {
   font-family: inherit;
   font-size: 1rem;
   color: $black;
-  line-height: 1.5rem;
+  line-height: normal;
 }
 
 // Grid
@@ -61,11 +73,11 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 
   @media screen and (min-width: $md) {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 1rem;
+    colume-gap: 1rem;
   }
 
   @media screen and (min-width: $lg) {
-    gap: 2rem;
+    colume-gap: 2rem;
   }
 }
 

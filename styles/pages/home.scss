@@ -1,9 +1,8 @@
 @use '../lib.scss';
 
 .home-main {
-  @include lib.container();
-  @include lib.grid();
   margin-top: 4rem;
+  flex-grow: 1;
 
   @media screen and (min-width: lib.$lg) {
     margin-top: 5rem;
@@ -61,12 +60,11 @@
 
   &__desc {
     margin-top: 1.5rem;
-    @include lib.body;
-    font-size: 1.25rem;
     text-align: center;
 
     p {
       margin: 0.5rem 0;
+      font-size: 1.25rem;
     }
   }
 

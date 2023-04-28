@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 
   &.body-roman {
     font-family: lib.$roman-sans;
@@ -30,4 +31,63 @@ body {
       overflow: auto;
     }
   }
+}
+
+.main-wrapper {
+  @include lib.container();
+  @include lib.grid();
+  margin-top: 3rem;
+}
+
+p {
+  @include lib.body;
+  max-width: 40rem;
+}
+
+.page-heading--h1 {
+  @include lib.h1;
+  grid-column: 1 / span 4;
+
+  @media screen and (min-width: lib.$md) {
+    grid-column: 1 / span 12;
+  }
+
+  @media screen and (min-width: lib.$lg) {
+    grid-column: 1 / span 8;
+  }
+
+  @media screen and (min-width: lib.$xl) {
+    grid-column: 2 / span 7;
+  }
+}
+
+.page-heading--h2 {
+  @include lib.h2;
+  margin-top: 2rem;
+}
+
+.page-content {
+  grid-column: 1 / span 4;
+
+  @media screen and (min-width: lib.$md) {
+    grid-column: 1 / span 12;
+  }
+
+  @media screen and (min-width: lib.$lg) {
+    grid-column: 1 / span 8;
+  }
+
+  @media screen and (min-width: lib.$lg) {
+    grid-column: 1 / span 8;
+  }
+
+  @media screen and (min-width: lib.$xl) {
+    grid-column: 2 / span 7;
+  }
+}
+
+.promo-image {
+  width: 100%;
+  max-width: 40rem;
+  margin-top: 1rem;
 }
