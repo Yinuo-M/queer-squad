@@ -570,6 +570,7 @@ header {
 
 .footer {
   margin-top: auto;
+  position: relative;
 }
 .footer__wrapper {
   background: url("../../assets/rainbow.jpg");
@@ -620,6 +621,54 @@ header {
 }
 .footer__mail a:hover {
   text-decoration: none;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  top: 5rem;
+  right: 0.5rem;
+  width: 9.5rem;
+  height: 8rem;
+  transform: translateY(-100%);
+}
+@media screen and (min-width: 744px) {
+  .footer::before {
+    top: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer::before {
+    top: 8rem;
+    width: 12rem;
+    height: 10rem;
+  }
+}
+.footer--bi {
+  margin-top: 12rem;
+}
+.footer--bi::before {
+  background-image: url("../../assets/figures/bi.png");
+}
+.footer--pan {
+  margin-top: 12rem;
+}
+.footer--pan::before {
+  background-image: url("../../assets/figures/pan.png");
+}
+.footer--les {
+  margin-top: 12rem;
+}
+.footer--les::before {
+  background-image: url("../../assets/figures/les.png");
+}
+.footer--lace {
+  margin-top: 12rem;
+}
+.footer--lace::before {
+  background-image: url("../../assets/figures/ace.png");
 }
 
 .home-main {

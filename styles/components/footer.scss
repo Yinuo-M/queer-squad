@@ -2,6 +2,7 @@
 
 .footer {
   margin-top: auto;
+  position: relative;
 
   &__wrapper {
     background: url('../../assets/rainbow.jpg');
@@ -53,6 +54,57 @@
     color: lib.$white;
     a {
       @include lib.link;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    top: 5rem;
+    right: 0.5rem;
+    width: 9.5rem;
+    height: 8rem;
+    transform: translateY(-100%);
+
+    @media screen and (min-width: lib.$md) {
+      top: 6rem;
+    }
+
+    @media screen and (min-width: lib.$lg) {
+      top: 8rem;
+      width: 12rem;
+      height: 10rem;
+    }
+  }
+
+  &--bi {
+    margin-top: 12rem;
+    &::before {
+      background-image: url('../../assets/figures/bi.png');
+    }
+  }
+
+  &--pan {
+    margin-top: 12rem;
+    &::before {
+      background-image: url('../../assets/figures/pan.png');
+    }
+  }
+
+  &--les {
+    margin-top: 12rem;
+    &::before {
+      background-image: url('../../assets/figures/les.png');
+    }
+  }
+
+  &--lace {
+    margin-top: 12rem;
+    &::before {
+      background-image: url('../../assets/figures/ace.png');
     }
   }
 }
