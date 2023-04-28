@@ -99,6 +99,15 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
   }
 }
 
+// Link
+@mixin link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 // Utility classes
 .sr-only {
   position: absolute;

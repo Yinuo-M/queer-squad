@@ -1,6 +1,7 @@
 @use './reset.scss';
 @use './lib.scss';
 @use './components/nav.scss';
+@use './components/footer.scss';
 @use './pages/home.scss';
 
 html {
@@ -15,6 +16,8 @@ html {
 
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   &.body-roman {
     font-family: lib.$roman-sans;

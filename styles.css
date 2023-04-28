@@ -176,6 +176,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -259,6 +260,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
+  appearance: textfield;
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -366,6 +368,17 @@ header {
   .nav {
     padding: 0 2rem;
   }
+}
+.nav__skip {
+  left: 0.25rem;
+  top: 0.25rem;
+  transform: translateX(-1000%);
+  position: absolute;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.nav__skip:focus {
+  transform: translateX(0%);
 }
 .nav__inner {
   display: flex;
@@ -552,6 +565,57 @@ header {
   border-radius: 0.2rem;
 }
 
+.footer {
+  background: url("../../assets/rainbow.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+@media screen and (min-width: 744px) {
+  .footer {
+    padding: 0.75rem 2rem;
+    margin-top: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 0.75rem 2rem;
+    margin-top: 8rem;
+  }
+}
+.footer__socials {
+  display: flex;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 744px) {
+  .footer__socials {
+    gap: 1rem;
+  }
+}
+.footer__social svg {
+  height: 2rem;
+  width: 2rem;
+}
+.footer__social:hover svg {
+  fill: #e9e8e8;
+}
+.footer__mail {
+  margin: 0;
+  color: #ffffff;
+}
+.footer__mail a {
+  text-decoration: underline;
+}
+.footer__mail a:hover {
+  text-decoration: none;
+}
+
 .home-main {
   padding: 0 1rem;
   max-width: 1440px;
@@ -707,6 +771,8 @@ html {
 
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body.body-roman {
   font-family: "Noto Sans", sans-serif;
