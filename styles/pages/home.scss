@@ -1,0 +1,96 @@
+@use '../lib.scss';
+
+.home-main {
+  @include lib.container();
+  @include lib.grid();
+  margin-top: 4rem;
+
+  @media screen and (min-width: lib.$lg) {
+    margin-top: 5rem;
+  }
+
+  &__logo {
+    grid-column: 2 / 4;
+    width: 100%;
+
+    @media screen and (min-width: lib.$md) {
+      grid-column: 5 / span 4;
+    }
+
+    @media screen and (min-width: lib.$lg) {
+      grid-column: 2 / span 3;
+    }
+  }
+
+  &__info {
+    grid-column: 1 / 6;
+    margin-top: 0.5rem;
+
+    @media screen and (min-width: lib.$md) {
+      grid-column: 2 / span 10;
+    }
+
+    @media screen and (min-width: lib.$lg) {
+      grid-column: 5 / span 7;
+      margin-top: 0;
+    }
+  }
+
+  &__headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    text-align: center;
+    @include lib.rainbow-fill;
+    font-size: 2.5rem;
+
+    &--english {
+      font-family: lib.$roman-serif;
+      padding-right: 0.5rem;
+      line-height: 4rem;
+    }
+
+    &--chinese {
+      font-family: lib.$chinese-serif;
+      margin-top: 0.25rem;
+    }
+  }
+
+  &__desc {
+    margin-top: 1.5rem;
+    @include lib.body;
+    font-size: 1.25rem;
+    text-align: center;
+
+    p {
+      margin: 0.5rem 0;
+    }
+  }
+
+  &__ctas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    @media screen and (min-width: lib.$md) {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+
+  &__cta {
+    &--primary {
+      @include lib.button;
+    }
+
+    &--secondary {
+      @include lib.button('secondary');
+    }
+  }
+}
