@@ -1,6 +1,7 @@
 @use './reset.scss';
 @use './lib.scss';
-@use './nav.scss';
+@use './components/nav.scss';
+@use './pages/home.scss';
 
 html {
   font-size: 16px;
