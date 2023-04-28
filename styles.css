@@ -514,6 +514,9 @@ header {
 .nav__link a:hover {
   background-color: rgba(0, 0, 0, 0.0588235294);
 }
+.nav__link--selected a {
+  color: #fb7922;
+}
 .nav__language-switcher {
   position: relative;
 }

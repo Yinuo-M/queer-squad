@@ -150,6 +150,12 @@ header {
         background-color: #0000000f;
       }
     }
+
+    &--selected {
+      a {
+        color: lib.$orange;
+      }
+    }
   }
 
   &__language-switcher {
