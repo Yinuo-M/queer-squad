@@ -23,6 +23,7 @@ if (mobileMenu && closeMenuBtn) {
   closeMenuBtn.addEventListener('click', closeMenu);
 
   const closeMenuOnClickOutside = (e) => {
+    // Close the menu if the user is clicking on the mobile menu but not the inner menu
     if (e.target === mobileMenu) closeMenu();
   };
   mobileMenu.addEventListener('click', closeMenuOnClickOutside);
@@ -63,4 +64,11 @@ if (languageBtn && languageList) {
     languageList.classList.toggle('hidden');
   };
   languageBtn.addEventListener('click', toggleList);
+
+  const closeLanguageOnClickOutside = (e) => {
+    if (e.target !== languageBtn && e.target !== languageList) {
+      languageList.classList.add('hidden');
+    }
+  };
+  document.body.addEventListener('click', closeLanguageOnClickOutside);
 }

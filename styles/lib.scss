@@ -8,6 +8,7 @@ $xl: 1440px;
 $black: #434343;
 $orange: #fb7922;
 $light-orange: #fb7922b0;
+$dark-orange: #d85600;
 $blue: #509dd4;
 $white: #ffffff;
 
@@ -56,6 +57,32 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 
   @media screen and (min-width: $lg) {
     gap: 2rem;
+  }
+}
+
+// Buttons
+@mixin button($style: 'primary') {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid $orange;
+  font-size: 1rem;
+  font-weight: 700;
+
+  @if $style == 'primary' {
+    background-color: $orange;
+    color: $white;
+
+    &:hover {
+      background-color: $dark-orange;
+      border-color: $dark-orange;
+    }
+  } @else if $style == 'secondary' {
+    background-color: $white;
+    color: $orange;
+
+    &:hover {
+      background-color: rgba(251, 121, 34, 0.09);
+    }
   }
 }
 

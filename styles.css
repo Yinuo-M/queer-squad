@@ -345,7 +345,7 @@ header {
 }
 @media screen and (min-width: 1024px) {
   header {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -403,7 +403,7 @@ header {
 @media screen and (min-width: 1024px) {
   .nav__logo {
     margin: 0 auto;
-    transform: translateX(30%);
+    transform: translateX(20%);
   }
 }
 .nav__mobile-nav {
@@ -416,6 +416,20 @@ header {
   overflow-x: hidden;
   z-index: 100;
   display: flex;
+}
+.nav__mobile-nav .nav__link--donate a {
+  background-image: url("../assets/rainbow.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+}
+.nav__mobile-nav .nav__link--donate a:hover {
+  transform: scale(1.05);
+  text-shadow: none;
 }
 @media screen and (min-width: 1024px) {
   .nav__mobile-nav {
@@ -432,6 +446,19 @@ header {
 .nav__desktop-nav {
   display: none;
 }
+.nav__desktop-nav .nav__link--donate a {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fb7922;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #fb7922;
+  color: #ffffff;
+}
+.nav__desktop-nav .nav__link--donate a:hover {
+  background-color: #d85600;
+  border-color: #d85600;
+}
 @media screen and (min-width: 1024px) {
   .nav__desktop-nav {
     display: block;
@@ -440,7 +467,7 @@ header {
 .nav__link-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
   align-items: center;
   justify-content: flex-start;
 }
@@ -449,32 +476,19 @@ header {
     flex-direction: row;
     gap: 1.5rem;
     justify-content: center;
-    margin-top: 0.25rem;
+    margin-top: 1rem;
   }
 }
-.nav__link {
+.nav__link a {
+  display: block;
   border-radius: 0.2rem;
   font-size: 1rem;
   text-align: center;
   transition: 0.1s all;
   padding: 0.5rem;
 }
-.nav__link:hover {
+.nav__link a:hover {
   background-color: rgba(0, 0, 0, 0.0588235294);
-}
-.nav__link--donate {
-  background-image: url("../assets/rainbow.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Pacifico", cursive;
-  font-size: 1.5rem;
-}
-.nav__link--donate:hover {
-  transform: scale(1.05);
-  text-shadow: none;
 }
 .nav__language-switcher {
   position: relative;
