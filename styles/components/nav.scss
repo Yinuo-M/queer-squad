@@ -13,6 +13,19 @@ header {
 .nav {
   @include lib.container;
 
+  &__skip {
+    left: 0.25rem;
+    top: 0.25rem;
+    transform: translateX(-1000%);
+    position: absolute;
+    padding: 1rem;
+    font-size: 1rem;
+
+    &:focus {
+      transform: translateX(0%);
+    }
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
