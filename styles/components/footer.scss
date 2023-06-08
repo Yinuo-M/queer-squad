@@ -54,6 +54,7 @@
     color: lib.$white;
     a {
       @include lib.link;
+      color: lib.$white;
     }
   }
 

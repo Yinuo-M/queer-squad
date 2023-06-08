@@ -618,6 +618,8 @@ header {
 }
 .footer__mail a {
   text-decoration: underline;
+  color: #509dd4;
+  color: #ffffff;
 }
 .footer__mail a:hover {
   text-decoration: none;
@@ -805,7 +807,7 @@ header {
 }
 .past-events__event {
   margin: 1.5rem 0 3rem;
-  background-color: rgba(255, 216, 190, 0.1529411765);
+  background-color: rgba(223, 223, 223, 0.23);
   padding: 1rem;
   border-radius: 0.3rem;
 }
@@ -861,6 +863,31 @@ header {
 }
 .past-events__details li {
   margin: 1rem 0;
+}
+
+.contact__socials {
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  margin-top: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 744px) {
+  .contact__socials {
+    flex-direction: row;
+  }
+}
+.contact__social {
+  display: flex;
+  flex-direction: column;
+}
+.contact__social p {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.contact__social span {
+  color: #fb7922;
 }
 
 html {
@@ -982,6 +1009,14 @@ h3 {
   width: 100%;
   max-width: 40rem;
   margin-top: 1rem;
+}
+
+.link {
+  text-decoration: underline;
+  color: #509dd4;
+}
+.link:hover {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

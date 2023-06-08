@@ -8,10 +8,10 @@ $xl: 1440px;
 $black: #434343;
 $orange: #fb7922;
 $light-orange: #fb7922b0;
-$off-orange: #ffd8be27;
 $dark-orange: #d85600;
 $blue: #509dd4;
 $white: #ffffff;
+$off-white: rgb(223 223 223 / 23%);
 $focus-yellow: #ffef44;
 
 // Fonts
@@ -120,6 +120,7 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 // Link
 @mixin link {
   text-decoration: underline;
+  color: $blue;
 
   &:hover {
     text-decoration: none;
