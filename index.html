@@ -25,7 +25,11 @@
         <a class="nav__skip" href="#main"> Skip to main content </a>
         <div class="nav__inner">
           <button class="nav__menu-button nav__menu-button--open">
-            <img src="./assets/icons/menu.svg" alt="Open menu" />
+            <img
+              src="./assets/icons/menu.svg"
+              alt="Open menu"
+              fetchPriority="high"
+            />
           </button>
           <div class="nav__mobile-nav hidden">
             <div class="nav__mobile-nav-inner">
@@ -33,12 +37,18 @@
                 <img src="./assets/icons/close.svg" alt="Close menu" />
               </button>
               <ul class="nav__link-list">
-                <li class="nav__link nav__link--selected"><a href=".">Home</a></li>
+                <li class="nav__link nav__link--selected">
+                  <a href=".">Home</a>
+                </li>
                 <li class="nav__link">
-                  <a href="./pages/about/about-english.html">About us</a>
+                  <a href="./pages/about/about-en.html">About us</a>
                 </li>
                 <li class="nav__link"><a href="">What's on</a></li>
-                <li class="nav__link"><a href="">Past events</a></li>
+                <li class="nav__link">
+                  <a href="./pages/past-events/past-events-en.html"
+                    >Past events</a
+                  >
+                </li>
                 <li class="nav__link"><a href="">Join us</a></li>
                 <li class="nav__link"><a href="">Contact</a></li>
                 <li class="nav__link"><a href="">Blog</a></li>
@@ -72,10 +82,12 @@
         <div class="nav__desktop-nav">
           <ul class="nav__link-list">
             <li class="nav__link">
-              <a href="./pages/about/about-english.html">About us</a>
+              <a href="./pages/about/about-en.html">About us</a>
             </li>
             <li class="nav__link"><a href="" target="_blank">What's on</a></li>
-            <li class="nav__link"><a href="">Past events</a></li>
+            <li class="nav__link">
+              <a href="./pages/past-events/past-events-en.html">Past events</a>
+            </li>
             <li class="nav__link"><a href="">Join us</a></li>
             <li class="nav__link"><a href="">Contact</a></li>
             <li class="nav__link"><a href="" target="_blank">Blog</a></li>
@@ -107,10 +119,14 @@
             <p>Embrace queerness!</p>
           </div>
           <div class="home-main__ctas">
-            <a href="" class="home-main__cta home-main__cta--secondary"
+            <a
+              href="./pages/about/about-en.html"
+              class="home-main__cta home-main__cta--secondary"
               >Get to know us</a
             >
-            <a href="" class="home-main__cta home-main__cta--primary">Join us</a>
+            <a href="" class="home-main__cta home-main__cta--primary"
+              >Join us</a
+            >
           </div>
         </div>
       </div>
