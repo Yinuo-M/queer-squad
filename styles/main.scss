@@ -43,7 +43,6 @@ body {
 
 p {
   @include lib.body;
-  max-width: 40rem;
 }
 
 h1 {

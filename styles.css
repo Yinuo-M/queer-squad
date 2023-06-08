@@ -792,6 +792,7 @@ header {
 .past-events__category {
   position: relative;
   padding-left: 2.5rem;
+  margin-top: 5rem;
 }
 .past-events__category::before {
   content: "";
@@ -947,7 +948,6 @@ p {
   font-size: 1rem;
   color: #434343;
   line-height: normal;
-  max-width: 40rem;
 }
 
 h1 {
