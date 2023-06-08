@@ -94,6 +94,11 @@ h3 {
   width: 100%;
   max-width: 40rem;
   margin-top: 1rem;
+
+  &--wide {
+    max-width: 50rem;
+    margin-top: 2rem;
+  }
 }
 
 .link {
