@@ -8,15 +8,13 @@
     margin-top: 1rem;
     align-items: flex-end;
     flex-wrap: wrap;
-
-    @media screen and (min-width: lib.$md) {
-      flex-direction: row;
-    }
   }
 
-  &__social {
+  &__social a,
+  &__social div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     p {
       margin-top: 0.5rem;

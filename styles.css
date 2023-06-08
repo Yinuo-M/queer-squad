@@ -873,20 +873,16 @@ header {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 744px) {
-  .contact__socials {
-    flex-direction: row;
-  }
-}
-.contact__social {
+.contact__social a, .contact__social div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.contact__social p {
+.contact__social a p, .contact__social div p {
   margin-top: 0.5rem;
   text-align: center;
 }
-.contact__social span {
+.contact__social a span, .contact__social div span {
   color: #fb7922;
 }
 
