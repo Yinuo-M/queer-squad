@@ -1,0 +1,92 @@
+@use '../lib.scss';
+
+.past-events {
+  &__category {
+    position: relative;
+    padding-left: 2.5rem;
+
+    &::before {
+      content: '';
+      background-image: url('../../assets/icons/film.svg');
+      display: block;
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__event {
+    margin: 1.5rem 0 3rem;
+    background-color: lib.$off-orange;
+    padding: 1rem;
+    border-radius: 0.3rem;
+
+    @media screen and (min-width: lib.$lg) {
+      padding: 2rem;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+
+    @media screen and (min-width: lib.$md) {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__location,
+  &__time {
+    position: relative;
+    padding-left: 2rem;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__location {
+    &::before {
+      background-image: url('../../assets/icons/location.svg');
+    }
+  }
+
+  &__time {
+    &::before {
+      background-image: url('../../assets/icons/time.svg');
+    }
+  }
+
+  &__details {
+    margin-top: 2rem;
+
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+}

@@ -8,6 +8,7 @@ $xl: 1440px;
 $black: #434343;
 $orange: #fb7922;
 $light-orange: #fb7922b0;
+$off-orange: #ffd8be27;
 $dark-orange: #d85600;
 $blue: #509dd4;
 $white: #ffffff;
@@ -47,6 +48,11 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
   color: $black;
 }
 
+@mixin h3 {
+  font-size: 1.5rem;
+  color: $orange;
+}
+
 @mixin body {
   font-family: inherit;
   font-size: 1rem;
@@ -73,11 +79,11 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 
   @media screen and (min-width: $md) {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    colume-gap: 1rem;
+    column-gap: 1rem;
   }
 
   @media screen and (min-width: $lg) {
-    colume-gap: 2rem;
+    column-gap: 2rem;
   }
 }
 

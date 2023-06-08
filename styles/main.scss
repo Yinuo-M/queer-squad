@@ -3,6 +3,7 @@
 @use './components/nav.scss';
 @use './components/footer.scss';
 @use './pages/home.scss';
+@use './pages/past-events.scss';
 
 html {
   font-size: 16px;
@@ -44,7 +45,7 @@ p {
   max-width: 40rem;
 }
 
-.page-heading--h1 {
+h1 {
   @include lib.h1;
   grid-column: 1 / span 4;
 
@@ -53,17 +54,17 @@ p {
   }
 
   @media screen and (min-width: lib.$lg) {
-    grid-column: 1 / span 8;
-  }
-
-  @media screen and (min-width: lib.$xl) {
     grid-column: 2 / span 7;
   }
 }
 
-.page-heading--h2 {
+h2 {
   @include lib.h2;
   margin-top: 2rem;
+}
+
+h3 {
+  @include lib.h3;
 }
 
 .page-content {
@@ -74,15 +75,17 @@ p {
   }
 
   @media screen and (min-width: lib.$lg) {
-    grid-column: 1 / span 8;
-  }
+    grid-column: 2 / span 7;
 
-  @media screen and (min-width: lib.$lg) {
-    grid-column: 1 / span 8;
+    &--wide {
+      grid-column: 2 / span 8;
+    }
   }
 
   @media screen and (min-width: lib.$xl) {
-    grid-column: 2 / span 7;
+    &--wide {
+      grid-column: 2 / span 7;
+    }
   }
 }
 
