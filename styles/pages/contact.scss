@@ -1,0 +1,30 @@
+@use '../lib.scss';
+
+.contact {
+  &__socials {
+    display: flex;
+    row-gap: 2rem;
+    column-gap: 3rem;
+    margin-top: 1rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: lib.$md) {
+      flex-direction: row;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    span {
+      color: lib.$orange;
+    }
+  }
+}
