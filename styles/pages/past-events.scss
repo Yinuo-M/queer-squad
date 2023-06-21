@@ -4,7 +4,7 @@
   &__category {
     position: relative;
     padding-left: 2.5rem;
-    margin-top: 5rem;
+    margin: 3rem 0 2rem;
 
     &::before {
       content: '';
@@ -41,6 +41,7 @@
     @media screen and (min-width: lib.$md) {
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     p {

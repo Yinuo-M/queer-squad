@@ -624,6 +624,9 @@ header {
 .footer__mail a:hover {
   text-decoration: none;
 }
+.footer__mail a:active, .footer__mail a:visited {
+  color: #d85600;
+}
 .footer::before {
   content: "";
   position: absolute;
@@ -792,7 +795,7 @@ header {
 .past-events__category {
   position: relative;
   padding-left: 2.5rem;
-  margin-top: 5rem;
+  margin: 3rem 0 2rem;
 }
 .past-events__category::before {
   content: "";
@@ -828,6 +831,7 @@ header {
   .past-events__meta {
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 .past-events__meta p {
@@ -977,6 +981,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   color: #fb7922;
+  line-height: 2rem;
 }
 
 .page-content {
@@ -1017,6 +1022,9 @@ h3 {
 }
 .link:hover {
   text-decoration: none;
+}
+.link:active, .link:visited {
+  color: #d85600;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -51,6 +51,7 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 @mixin h3 {
   font-size: 1.5rem;
   color: $orange;
+  line-height: 2rem;
 }
 
 @mixin body {
@@ -124,6 +125,11 @@ $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 
   &:hover {
     text-decoration: none;
+  }
+
+  &:active,
+  &:visited {
+    color: $dark-orange;
   }
 }
 
