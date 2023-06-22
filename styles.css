@@ -652,25 +652,25 @@ header {
   }
 }
 .footer--bi {
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 .footer--bi::before {
   background-image: url("../../assets/figures/bi.png");
 }
 .footer--pan {
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 .footer--pan::before {
   background-image: url("../../assets/figures/pan.png");
 }
 .footer--les {
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 .footer--les::before {
   background-image: url("../../assets/figures/les.png");
 }
 .footer--ace {
-  margin-top: 12rem;
+  margin-top: 8rem;
 }
 .footer--ace::before {
   background-image: url("../../assets/figures/ace.png");
