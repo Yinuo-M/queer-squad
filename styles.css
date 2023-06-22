@@ -794,20 +794,28 @@ header {
 
 .past-events__category {
   position: relative;
-  padding-left: 2.5rem;
   margin: 3rem 0 2rem;
 }
 .past-events__category::before {
   content: "";
-  background-image: url("../../assets/icons/film.svg");
-  display: block;
-  position: absolute;
+  display: inline-block;
+  position: relative;
   width: 2rem;
   height: 2rem;
   background-size: contain;
   background-repeat: no-repeat;
-  left: 0;
-  bottom: 0;
+}
+.past-events__category--film::before {
+  background-image: url("../../assets/icons/film.svg");
+  top: 0.5rem;
+}
+.past-events__category--reading::before {
+  background-image: url("../../assets/icons/book.svg");
+  top: 0.4rem;
+}
+.past-events__category--workshop::before {
+  background-image: url("../../assets/icons/group.svg");
+  top: 0.3rem;
 }
 .past-events__event {
   margin: 1.5rem 0 3rem;
