@@ -1,9 +1,12 @@
 @use '../lib.scss';
 
 .past-events {
+  &__section {
+    margin: 3rem 0 10rem;
+  }
+
   &__category {
     position: relative;
-    margin: 3rem 0 2rem;
 
     &::before {
       content: '';

@@ -792,9 +792,11 @@ header {
   background-color: rgba(251, 121, 34, 0.09);
 }
 
+.past-events__section {
+  margin: 3rem 0 10rem;
+}
 .past-events__category {
   position: relative;
-  margin: 3rem 0 2rem;
 }
 .past-events__category::before {
   content: "";
