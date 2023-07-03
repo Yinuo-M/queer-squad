@@ -7,6 +7,8 @@ Must
 - [x] Disable donate
 - [x] Lazy load past events images
 - [x] Change astraunout icons
+- [ ] Add height and width to image
+- [ ] Make footer stick to the bottom
 
 Disabled sections
 - [ ] About us - committee members
