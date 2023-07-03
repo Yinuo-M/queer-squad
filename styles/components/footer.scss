@@ -84,28 +84,28 @@
   &--bi {
     margin-top: 8rem;
     &::before {
-      background-image: url('../../assets/figures/bi.png');
+      background-image: url('/assets/figures/bi.png');
     }
   }
 
   &--pan {
     margin-top: 8rem;
     &::before {
-      background-image: url('../../assets/figures/pan.png');
+      background-image: url('/assets/figures/pan.png');
     }
   }
 
   &--les {
     margin-top: 8rem;
     &::before {
-      background-image: url('../../assets/figures/les.png');
+      background-image: url('/assets/figures/les.png');
     }
   }
 
   &--ace {
     margin-top: 8rem;
     &::before {
-      background-image: url('../../assets/figures/ace.png');
+      background-image: url('/assets/figures/ace.png');
     }
   }
 }

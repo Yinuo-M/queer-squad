@@ -20,21 +20,21 @@
 
     &--film {
       &::before {
-        background-image: url('../../assets/icons/film.svg');
+        background-image: url('/assets/icons/film.svg');
         top: 0.5rem;
       }
     }
 
     &--reading {
       &::before {
-        background-image: url('../../assets/icons/book.svg');
+        background-image: url('/assets/icons/book.svg');
         top: 0.4rem;
       }
     }
 
     &--workshop {
       &::before {
-        background-image: url('../../assets/icons/group.svg');
+        background-image: url('/assets/icons/group.svg');
         top: 0.3rem;
       }
     }
@@ -89,13 +89,13 @@
 
   &__location {
     &::before {
-      background-image: url('../../assets/icons/location.svg');
+      background-image: url('/assets/icons/location.svg');
     }
   }
 
   &__time {
     &::before {
-      background-image: url('../../assets/icons/time.svg');
+      background-image: url('/assets/icons/time.svg');
     }
   }
 

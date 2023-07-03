@@ -21,7 +21,7 @@ $roman-serif: 'Pacifico', cursive;
 $chinese-serif: 'ZCOOL KuaiLe', sans-serif;
 
 @mixin rainbow-fill {
-  background-image: url('../assets/rainbow.jpg');
+  background-image: url('/assets/rainbow.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

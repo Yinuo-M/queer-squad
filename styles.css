@@ -410,7 +410,7 @@ header {
   font-family: "Pacifico", cursive;
   font-size: 1.5rem;
   text-decoration: none;
-  background-image: url("../assets/rainbow.jpg");
+  background-image: url("/assets/rainbow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -438,7 +438,7 @@ header {
   display: flex;
 }
 .nav__mobile-nav .nav__link--donate a {
-  background-image: url("../assets/rainbow.jpg");
+  background-image: url("/assets/rainbow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -531,7 +531,7 @@ header {
 }
 .nav__language-button::before {
   content: "";
-  background-image: url("../assets/icons/language.svg");
+  background-image: url("/assets/icons/language.svg");
   background-size: contain;
   display: block;
   width: 1.25rem;
@@ -655,25 +655,25 @@ header {
   margin-top: 8rem;
 }
 .footer--bi::before {
-  background-image: url("../../assets/figures/bi.png");
+  background-image: url("/assets/figures/bi.png");
 }
 .footer--pan {
   margin-top: 8rem;
 }
 .footer--pan::before {
-  background-image: url("../../assets/figures/pan.png");
+  background-image: url("/assets/figures/pan.png");
 }
 .footer--les {
   margin-top: 8rem;
 }
 .footer--les::before {
-  background-image: url("../../assets/figures/les.png");
+  background-image: url("/assets/figures/les.png");
 }
 .footer--ace {
   margin-top: 8rem;
 }
 .footer--ace::before {
-  background-image: url("../../assets/figures/ace.png");
+  background-image: url("/assets/figures/ace.png");
 }
 
 .home {
@@ -721,7 +721,7 @@ header {
 }
 .home__heading {
   text-align: center;
-  background-image: url("../assets/rainbow.jpg");
+  background-image: url("/assets/rainbow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -808,15 +808,15 @@ header {
   background-repeat: no-repeat;
 }
 .past-events__category--film::before {
-  background-image: url("../../assets/icons/film.svg");
+  background-image: url("/assets/icons/film.svg");
   top: 0.5rem;
 }
 .past-events__category--reading::before {
-  background-image: url("../../assets/icons/book.svg");
+  background-image: url("/assets/icons/book.svg");
   top: 0.4rem;
 }
 .past-events__category--workshop::before {
-  background-image: url("../../assets/icons/group.svg");
+  background-image: url("/assets/icons/group.svg");
   top: 0.3rem;
 }
 .past-events__event {
@@ -864,10 +864,10 @@ header {
   bottom: 0;
 }
 .past-events__location::before {
-  background-image: url("../../assets/icons/location.svg");
+  background-image: url("/assets/icons/location.svg");
 }
 .past-events__time::before {
-  background-image: url("../../assets/icons/time.svg");
+  background-image: url("/assets/icons/time.svg");
 }
 .past-events__details {
   margin-top: 2rem;
