@@ -11,6 +11,7 @@
   &__logo {
     grid-column: 2 / 4;
     width: 100%;
+    height: auto;
 
     @media screen and (min-width: lib.$md) {
       grid-column: 5 / span 4;

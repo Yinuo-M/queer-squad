@@ -688,6 +688,7 @@ header {
 .home__logo {
   grid-column: 2/4;
   width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 744px) {
   .home__logo {
